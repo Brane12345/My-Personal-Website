@@ -1,0 +1,299 @@
+body {
+    background-color: #f0f9fd;
+	font-family: 'Segoe UI', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+	border-radius: 6px;
+    background: linear-gradient(145deg, #433e3e, #4f4a4a);
+    box-shadow:  5px 5px 10px #1e1c1c,
+             -5px -5px 10px #766e6e;
+	color: #242222;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    z-index: 999;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: #fff;
+    margin-right: 10rem; /* Add some margin to the right to create some space */
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e6e6e6;
+    text-transform: uppercase;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+  
+  .burger {
+    display: none;
+  }
+  
+  .burger div {
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+  
+nav a:hover {
+    color: #1e90ff;
+}
+
+a {
+    margin: 5px;
+    color:black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container2 {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#home h1 {
+    color: orange;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+    
+section {
+    margin-top: 80px;
+    padding: 50px;
+}
+    
+section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+    
+section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+    
+section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+    
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+    
+.gallery img {
+    flex-basis: 23%;
+    margin-bottom: 20px;
+}
+
+#about, #portfolio {
+    border-radius: 26px;
+    background: #eee2e3;
+    box-shadow: inset 25px 25px 50px #948c8d,
+            inset -25px -25px 50px #ffffff;
+}
+
+#skills {
+    border-radius: 36px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  26px 26px 12px #696969,
+             -26px -26px 12px #ffffff;
+}
+
+form label {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 1.2rem;
+}
+    
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+    
+.container {
+    padding-top: 5px;
+    margin: 1px;
+    background: rgba(24, 20, 20, 0.987);
+    color: white;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+    
+footer {
+    border-radius: 6px;
+background: linear-gradient(145deg, #433e3e, #4f4a4a);
+box-shadow:  5px 5px 10px #1e1c1c,
+             -5px -5px 10px #766e6e;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.2rem;
+}
+    
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+    
+button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+               -6px -6px 12px #ffffff;
+}
+  
+button:hover {
+    border: 1px solid white;
+}
+  
+button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+               -4px -4px 12px #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+      width: 70%;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-links {
+        position: fixed;
+        background-color: #333;
+        height: 100vh;
+        width: 100%;
+        top: 10vh;
+        left: -100%;
+        text-align: center;
+        display: block;
+        transition: all 0.5s ease;
+    }
+    .nav-links li {
+        margin-top: 2rem;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+    
+.nav-active {
+    background-color: #333;
+    left: 0;
+    transition: all 0.5s ease;
+}
+    
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+    
+.toggle .line2 {
+    opacity: 0;
+}
+    
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+img {
+    display: flex;
+    justify-content: flex-start;
+    height: 350px;
+    width: 350px;
+}
